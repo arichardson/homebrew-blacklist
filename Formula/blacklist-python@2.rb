@@ -5,7 +5,7 @@ class BlacklistPythonAT2 < Formula
   sha256 "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
 
   conflicts_with "python@2", :because => "This is the sole purpose of this formula"
-  keg_only "Because this is just a blacklist"
+  # keg_only "Because this is just a blacklist"
 
   def install
     system "echo", "Blacklisting python@2"
