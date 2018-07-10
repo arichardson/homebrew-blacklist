@@ -10,8 +10,9 @@ class BlacklistPythonAT2 < Formula
   def install
     system "echo", "Blacklisting python@2"
     # need at least one file otherwise homebrew complains:
-    system "mkdir", "#{share}"
-    system "touch", "#{share}/info"
+    system "mkdir", "#{pkgshare}"
+    # Create a unique file to 
+    system "touch", "#{pkgshare}/BLACKLISTED"
   end
 
   test do
